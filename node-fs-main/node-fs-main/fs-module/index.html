@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tannu</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+</head>
+<body>
+    <h1>Hello Everyone</h1>
+    <p>This is Nsti Patna</p>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="row"><label>First Name</label>
+                <input type="text" class="form-control"></div>
+            </div>
+            <div class="col">
+                <label>Middle Name</label>
+                <input type="text" class="form-control">
+            </div>
+            <div class="col">
+                <label>Last Name</label>
+                <input type="text" class="form-control">
+            </div>
+            <div class="col">
+                <label>Email</label>
+                <input type="text" class="form-control">
+            </div>
+            </div>
+        </div>
+    </div>
+    <form id="reg">
+        Name : <input type="text" id="name"><br><br>
+        E-mail : <input type="mail" id="mail"><br><br>
+        Location : 
+        <select id="nsti">
+            <option value="Patna">Patna</option>
+            <option value="Prayagraj">Allahabad</option>
+            <option value="Dehradun">Dehradun</option>
+            <option value="Kanpur">Kanpur</option>
+        </select>
+        <br><br>
+        <input type="submit" id="submit">
+    </form>
+
+
+    <script>
+        $(document).ready(function(){
+                $("input, select").focus(function(){
+                $(this).css("background","yellow")
+                })
+               $("input,select").blur(function(){
+               $(this).css("background","")
+               })
+               $("input").select(function(){
+                $(this).css("background","blue")
+               })
+               $("select").change(function(){
+                a = $(this).val()
+                $("#reg").html(a)
+              })
+              $("#reg").submit(function(){
+                alert("thank you")
+              })
+            })
+
+    </script>
+     <style>
+        #a {
+           width: 300px;
+           height: 250px;
+           background-color: rgb(255, 17, 0);
+           border: 2px solid;
+           padding: 10pcx;
+           overflow: auto;
+       }
+       h1 {
+  text-align: center;
+}
+
+   </style>
+  
+   <h1>Tannu</h1>
+   <p> Research indicates that while digital communication has enhanced the capacity of people to connect across cultures, there are limitations regarding how this communication translates to genuine connection. [Supporting sentences] Many scholars suggest that social media is a way for people to form relationships in the digital space even though they may be separated geographically. Smith (2010, p. 75) suggests that technology has “greatly enhanced” the capacity of people to connect through digital platforms such as Facebook, Twitter and Instagram. Rogers et al. (2019) propose that these kinds of technology platforms not only benefit users in terms of social connectivity, but also significantly impact the distribution of knowledge between people and cultures. [1] Similarly, in a study of over 1,500 participants in Australia, China, India and Germany, Cosgrove (2018) found that people who regularly used social media were more likely to engage in activities from other cultures. However, other scholars suggest there are significant limitations to the extent to which social media enhances cross-cultural connection. [2] While Harrison (2017, p. 9) agrees that technology has increased the capacity for people to communicate across cultures, he raises concerns that such forms of communication fail to “foster in-depth relationships” between people and communities from different cultures. In a similar way, James (2020) suggests that developments in technology must be accompanied by rigorous and meaningful debate about the possibilities and limitations of such communication in terms of cultural connection. Going further, Markson (2018, p. 18) warns that digital communication platforms, while seeming to enhance connection, actually “erode the fundamental principles of cross-cultural engagement” by reducing important and complex aspects of culture to “instant images … for immediate gratification rather than deep understanding".  [Concluding sentence] While social media platforms offer the chance for many people from different cultures to connect, more research needs to be done regarding the quality of such connection
+    .</p>
+<script>
+   $(document).ready(function(){
+     $(window).scroll(function(){
+
+       $(window).resize(function(){
+         $("body").html('0')
+       })
+     })
+      $(window).resize(function(){
+      alert("Resize Effect")
+       })
+       $(window).resize(function(){
+      console.log("Resize Effect")
+       })
+   })
+</script>
+</body>
+</html>
